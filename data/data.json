@@ -1,0 +1,98 @@
+{
+    "id": 1,
+    "name": "Preliminary experiments",
+    "experiments": [
+        {
+            "id": 1,
+            "title": "Experiment 1",
+            "description": "Let's see how this works.",
+            "rating": 6.5
+        },
+        {
+            "id": 2,
+            "title": "Experiment 2",
+            "description": "All is well.",
+            "rating": 8
+        },
+        {
+            "id": 3,
+            "title": "Failed experiment no 3",
+            "description": "Not quite there yet.",
+            "rating": 5
+        },
+        {
+            "id": 4,
+            "title": "Next Set Demo 1",
+            "description": "",
+            "rating": 4
+        }
+    ],
+    "researchers": [
+        {
+            "id": 1,
+            "name": "John"
+        },
+        {
+            "id": 2,
+            "name": "Pete"
+        },
+        {
+            "id": 3,
+            "name": "Sarah"
+        },
+        {
+            "id": 4,
+            "name": "Gramps"
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "researcherId": 1,
+            "experimentId": 1,
+            "score": 7
+        },
+        {
+            "id": 2,
+            "researcherId": 1,
+            "experimentId": 2,
+            "score": 9
+        },
+        {
+            "id": 3,
+            "researcherId": 2,
+            "experimentId": 2,
+            "score": 9.5
+        },
+        {
+            "id": 4,
+            "researcherId": 1,
+            "experimentId": 3,
+            "score": 6
+        },
+        {
+            "id": 5,
+            "researcherId": 3,
+            "experimentId": 4,
+            "score": 3
+        },
+        {
+            "id": 6,
+            "researcherId": 1,
+            "experimentId": 4,
+            "score": 2
+        },
+        {
+            "id": 7,
+            "researcherId": 2,
+            "experimentId": 3,
+            "score": 6.5
+        },
+        {
+            "id": 8,
+            "researcherId": 4,
+            "experimentId": 4,
+            "score": 4
+        }
+    ]
+}

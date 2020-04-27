@@ -1,20 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Main :api-config="apiConfig"></Main>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import APIConfig from './connect/APIConfig';
+import Main from './components/Main.vue';
+
+const HOST_URL = 'http://localhost:3000';
 
 @Component({
   components: {
-    HelloWorld,
+    Main,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+	private readonly apiConfig: APIConfig = APIConfig.from({
+		loadURL: `${HOST_URL}/experiments`,
+		resetURL: `${HOST_URL}/reset`,
+		addResearcherURL: `${HOST_URL}/researcher-add`,
+		addExperimentURL: `${HOST_URL}/experiment-add`,
+		addReviewURL: `${HOST_URL}/review-add`,
+		updateExperimentTitleURL: `${HOST_URL}/experiment-update-title`,
+		updateExperimentRatingURL: `${HOST_URL}/experiment-update-rating`,
+		updateReviewURL: `${HOST_URL}/review-update`
+	});
+}
 </script>
 
 <style>
@@ -22,8 +35,7 @@ export default class App extends Vue {}
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>

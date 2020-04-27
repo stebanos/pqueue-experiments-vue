@@ -1,0 +1,54 @@
+{
+	"id": 1,
+	"name": "Preliminary experiments",
+	"experiments": [
+		{
+			"id": 1,
+			"title": "Experiment 1",
+			"description": "Let's see how this works.",
+			"rating": 5.5
+		},
+		{
+			"id": 2,
+			"title": "Experiment 2",
+			"description": "All is well.",
+			"rating": 8
+		},
+		{
+			"id": 3,
+			"title": "Experiment 3",
+			"description": "Not quite there yet.",
+			"rating": 8
+		}
+	],
+	"researchers": [
+		{
+			"id": 1,
+			"name": "John"
+		},
+		{
+			"id": 2,
+			"name": "Pete"
+		}
+	],
+	"reviews": [
+		{
+			"id": 1,
+			"researcherId": 1,
+			"experimentId": 1,
+			"score": 7
+		},
+		{
+			"id": 2,
+			"researcherId": 1,
+			"experimentId": 2,
+			"score": 10
+		},
+		{
+			"id": 3,
+			"researcherId": 2,
+			"experimentId": 2,
+			"score": 9.5
+		}
+	]
+}
