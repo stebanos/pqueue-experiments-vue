@@ -22,7 +22,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-typescript": "~4.3.0",
-    "@vue/cli-service": "~4.3.0",
+    "@vue/cli-service": "~5.0.8",
     "fs-extra": "^9.0.0",
     "typescript": "~3.8.3",
     "vue-cli-plugin-express": "^1.0.2",
